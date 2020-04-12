@@ -18,7 +18,7 @@ class Post(models.Model): # this line defines our model (it is an object).
 #models.DateTimeField – this is a date and time.
 #models.ForeignKey – this is a link to another model.
     def publish(self):
-        self.published_date = timezone.now
+        self.published_date = timezone.now()
         self.save()
 
     def __str__(self):
